@@ -1,2 +1,60 @@
-\title{Project 2B}
-\begin{document}
+\documentclass[a4paper, 12pt]{article}
+\geometry{ margin=25mm }
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tocloft}
+\usepackage{geometry}
+\usepackage{underscore}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+
+
+\begin{document}\sloppy
+\titleformat{\section}
+{\normalfont\fontsize{14}{0}\bfseries}{\thesection}{1em}{}
+\titlespacing{\section}{0cm}{0.4cm}{0.12cm}
+\titleformat{\subsection}
+{\normalfont\fontsize{12.5}{0}\bfseries}{\thesubsection}{0.4em}{}
+\titlespacing{\section}{0cm}{0.4cm}{0.12cm}
+
+\begin{titlepage}
+    \center
+    \textbf{\huge INFO1111: Computing 1A Professionalism}\\[2cm]
+    \textbf{\huge Semester 1 2021}\\[2cm]
+    \textbf{\huge Project 2B}\\[6cm]
+    \textbf{\huge Group Number: CCO1_Group_3}\\[1cm]
+    \begin{tabular}{ |c|c|c| }
+        \hline
+        & Full Name & Student ID \\
+      \hline
+      1 & Jae Hyeon (Jacob) Lee & 500436259\\
+      \hline
+      2 & Name & SID\\
+      \hline
+      3 & Name & SID\\
+      \hline
+      4 & Name & SID\\
+      \hline
+    \end{tabular}
+    \end{titlepage}
+
+\tableofcontents
+
+\newpage
+\include{introduction.}
+
+\newpage
+\include{allocations}
+
+\newpage
+\include{Assignment2Breport}
+
+\newpage
+\include{contribution}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
+\end{report}
