@@ -1,4 +1,5 @@
 \documentclass[a4paper, 12pt]{article}
+\usepackage{setspace}
 \geometry{ margin=25mm }
 \usepackage{fancyhdr}
 \usepackage{graphicx}
@@ -9,10 +10,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
 \usepackage[normalem]{ulem}
-\usepackage{apalike}
+\usepackage{apacite}
+\usepackage{url}
 
 \begin{document}\sloppy
-\titleformat{\section}
+\onehalfspacing
+\titleformat{\section} 
 {\normalfont\fontsize{14}{0}\bfseries}{\thesection}{1em}{}
 \titlespacing{\section}{0cm}{0.4cm}{0.12cm}
 \titleformat{\subsection}
@@ -52,8 +55,11 @@
 \newpage
 \include{contribution}
 
-\bibliographystyle{apalike}
+\newpage
+\begin{doublespace}
+\bibliographystyle{apacite}
 \bibliography{references}
+\end{doublespace}
 
 \end{document}
 \end{report}
